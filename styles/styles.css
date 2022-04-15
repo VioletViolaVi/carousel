@@ -30,7 +30,12 @@ a {
   display: flex;
   justify-content: center;
   position: relative;
-  flex-direction: column; /* remove later probs */
+}
+
+.img-container {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 
 .img-container img {
@@ -47,8 +52,8 @@ a {
   display: grid;
   align-content: center;
   cursor: pointer;
-  /* background-color: #e3f988; */
-  /* border: solid 0.2rem #7a942e; */
+  background-color: #e3f988;
+  border: solid 0.2rem #7a942e;
 }
 
 .arrows i {
@@ -59,8 +64,7 @@ a {
 .arrows:hover {
   border: solid 0.3rem #9ab973;
   background-color: #e3f988;
-  transition: 0.5s;
-  /* border: solid 0.2rem #7a942e; */
+  transition: 0.3s;
 }
 
 .arrows i:hover {
@@ -68,13 +72,20 @@ a {
 }
 
 .left {
+  left: 1.5rem;
   position: absolute;
   top: 8rem;
-  left: 1.5rem;
+  z-index: 1;
 }
 
 .right {
+  right: 1.5rem;
   position: absolute;
   top: 8rem;
-  right: 1.5rem;
+  z-index: 1;
+}
+
+/************************************************** js arrows */
+.remove {
+  display: none;
 }
