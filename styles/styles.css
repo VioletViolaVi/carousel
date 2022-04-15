@@ -30,6 +30,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column; /* remove later probs */
+  position: relative;
 }
 
 .img-container img {
@@ -61,4 +62,16 @@ a {
 
 .arrows i:hover {
   color: #9ab973;
+}
+
+.left {
+  position: absolute;
+  top: 8rem;
+  left: 1.5rem;
+}
+
+.right {
+  position: absolute;
+  top: 8rem;
+  right: 1.5rem;
 }
