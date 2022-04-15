@@ -29,10 +29,11 @@ a {
 .carousel-section {
   display: flex;
   justify-content: center;
+  flex-direction: column; /* remove later probs */
 }
 
 .img-container img {
-  width: 19rem;
+  width: 18rem;
   height: 18rem;
   border: solid 0.5rem #9ab973;
 }
