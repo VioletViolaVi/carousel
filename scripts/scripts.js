@@ -1,34 +1,45 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // changes images
+
   const changeImage = () => {
-    // left arrow
+
+    const allImagesArr = [
+      "images/pool.avif", // 0
+      "images/palms.avif", // 1
+      "images/umbrellas.avif", // 2
+    ];
+
     const leftArrow = document.getElementById("left");
 
-    // clicking left arrow
     leftArrow.addEventListener("click", function () {
+      let imgSrc = document.getElementById("imageId").src;
+      imgSrc = allImagesArr[0];
 
-      // image src
-      const srcImg = document.getElementById("image").src;
-
-      // arr of images
-      const allImagesSrc = [
-        "images/pool.avif",
-        "images/palms.avif",
-        "images/umbrellas.avif",
-      ];
-
-      console.log("srcImg: ", srcImg);
-      console.log("allImagesSrc[0]: ", allImagesSrc[0]);
-      console.log("allImagesSrc[1]: ", allImagesSrc[1]);
-      console.log("allImagesSrc[2]: ", allImagesSrc[2]);
-
-      // loop through img arr
-      for (let i = 0; i < allImagesSrc.length; i++) {
-        if(srcImg === allImagesSrc[i]) {
-          console.log("SAME!!!");
-        }
+      if (imgSrc === "images/pool.avif") {
+        imgSrc = allImagesArr[0+2];
+        console.log("same");
+      } else if (imgSrc === "images/palms.avif") {
+        imgSrc = "images/umbrellas.avif";
+      } else if (imgSrc === "images/umbrellas.avif") {
+        imgSrc = "images/pool.avif";
       }
+
+      console.log("imgSrc: ", imgSrc);
     });
+
   };
   changeImage();
 });
+
+/* 
+  - change index (allImagesArr[0]) using this order:  [1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2 ]
+  - from zero (LEFT arrow):
+    - add 2
+    - subtract 1
+    - subtract 1
+    - and so on....
+  - from zero (RIGHT arrow):
+    - add 1
+    - add 1
+    - subtract 2
+    - and so on....
+*/
