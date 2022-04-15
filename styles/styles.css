@@ -1,3 +1,6 @@
+/************************************************** custom defaults */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +9,18 @@
 
 body {
   cursor: default;
+  font-family: "Comfortaa", "cursive", Impact, "Arial Narrow Bold", sans-serif,
+    "Haettenschweiler";
 }
 
 a {
   list-style: none;
+}
+
+/************************************************** title */
+.title-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 3rem;
+  color: #6b8e23;
 }
