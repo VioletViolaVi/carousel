@@ -29,8 +29,8 @@ a {
 .carousel-section {
   display: flex;
   justify-content: center;
-  flex-direction: column; /* remove later probs */
   position: relative;
+  flex-direction: column; /* remove later probs */
 }
 
 .img-container img {
@@ -41,14 +41,14 @@ a {
 
 /************************************************** arrows */
 .arrows {
-  background-color: #e3f988;
   width: 3rem;
   height: 3rem;
   border-radius: 0.5rem;
-  border: solid 0.2rem #7a942e;
   display: grid;
   align-content: center;
   cursor: pointer;
+  /* background-color: #e3f988; */
+  /* border: solid 0.2rem #7a942e; */
 }
 
 .arrows i {
@@ -58,6 +58,9 @@ a {
 
 .arrows:hover {
   border: solid 0.3rem #9ab973;
+  background-color: #e3f988;
+  transition: 0.5s;
+  /* border: solid 0.2rem #7a942e; */
 }
 
 .arrows i:hover {
