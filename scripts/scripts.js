@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-
   const changeImage = () => {
-
     const allImagesArr = [
       "images/pool.avif", // 0
       "images/palms.avif", // 1
@@ -11,21 +9,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const leftArrow = document.getElementById("left");
 
     leftArrow.addEventListener("click", function () {
-      let imgSrc = document.getElementById("imageId").src;
-      imgSrc = allImagesArr[0];
+      // document.getElementById("imageId").src = allImagesArr[0];
 
-      if (imgSrc === "images/pool.avif") {
-        imgSrc = allImagesArr[0+2];
-        console.log("same");
-      } else if (imgSrc === "images/palms.avif") {
-        imgSrc = "images/umbrellas.avif";
-      } else if (imgSrc === "images/umbrellas.avif") {
-        imgSrc = "images/pool.avif";
+      if (document.getElementById("imageId").src === "http://127.0.0.1:5555/images/pool.avif") {
+        document.getElementById("imageId").src = allImagesArr[2];
+      } else if (
+        document.getElementById("imageId").src === "http://127.0.0.1:5555/images/umbrellas.avif"
+      ) {
+        document.getElementById("imageId").src = allImagesArr[1];
+      } else if (
+        document.getElementById("imageId").src === "http://127.0.0.1:5555/images/palms.avif"
+      ) {
+        document.getElementById("imageId").src = allImagesArr[0];
+      } else{
+        console.log("ERROR!!!!");
       }
 
-      console.log("imgSrc: ", imgSrc);
+      
+      console.log(document.getElementById("imageId").src);
     });
-
   };
   changeImage();
 });
