@@ -37,3 +37,28 @@ a {
   height: 18rem;
   border: solid 0.5rem #9ab973;
 }
+
+/************************************************** arrows */
+.arrows {
+  background-color: #e3f988;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: solid 0.2rem #7a942e;
+  display: grid;
+  align-content: center;
+  cursor: pointer;
+}
+
+.arrows i {
+  color: #8a9a5b;
+  font-size: 2rem;
+}
+
+.arrows:hover {
+  border: solid 0.3rem #9ab973;
+}
+
+.arrows i:hover {
+  color: #9ab973;
+}
