@@ -1,18 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // images in array
-  const allImagesArr = [
-    "http://127.0.0.1:5555/images/pool.avif",
-    "http://127.0.0.1:5555/images/umbrellas.avif",
-    "http://127.0.0.1:5555/images/palms.avif",
-  ];
-
-  // figcaption array
-  const subtitles = [
-    "Chill by the pool with orange cushions",
-    "Home away from home",
-    "Tropical paradise with cloudy skies",
-  ];
-
+  // captions & links for images
   const allImageInfo = [
     {
       id: 1,
@@ -34,12 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const changeLeftImage = () => {
-    // get left arrow id
+    // get left arrow
     const leftArrow = document.getElementById("left");
 
     // click function for left arrow
     leftArrow.addEventListener("click", function () {
-      // toggles among images
+      // toggles images
       if (document.getElementById("imageId").src === allImageInfo[0].imgLink) {
         document.getElementById("imageId").src = allImageInfo[2].imgLink;
         document.getElementById("imgText").innerHTML = allImageInfo[2].caption;
@@ -59,12 +46,12 @@ document.addEventListener("DOMContentLoaded", function () {
   changeLeftImage();
 
   const changeRightImage = () => {
-    // get right arrow id
+    // get right arrow
     const rightArrow = document.getElementById("right");
 
     // click function for right arrow
     rightArrow.addEventListener("click", function () {
-      // toggles among images
+      // toggles images
       if (document.getElementById("imageId").src === allImageInfo[0].imgLink) {
         document.getElementById("imageId").src = allImageInfo[1].imgLink;
         document.getElementById("imgText").innerHTML = allImageInfo[1].caption;
