@@ -78,9 +78,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
   changeRightImage();
-
-  /* 
-    TO DO LIST:
-    - make responsive
-  */
 });
