@@ -51,8 +51,9 @@ a {
 }
 
 @media (min-width: 529px) {
-  .img-container img {
-    height: 100%;
+  #imgText {
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 }
 
