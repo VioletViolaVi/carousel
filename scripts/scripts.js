@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     {
       id: 1,
-      imgLink: "http://127.0.0.1:5555/images/umbrellas.avif",
-      caption: "Home away from home",
-      altText: "Hotel with clear skies",
+      imgLink: "http://127.0.0.1:5555/images/night.avif",
+      caption: "Home away from home at night",
+      altText: "Hotel at night",
     },
 
     {
