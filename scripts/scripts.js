@@ -1,9 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
   // images in array
   const allImagesArr = [
-    "http://127.0.0.1:5555/images/pool.avif", // index 0
-    "http://127.0.0.1:5555/images/umbrellas.avif", // index 1
-    "http://127.0.0.1:5555/images/palms.avif", // index 2
+    "http://127.0.0.1:5555/images/pool.avif",
+    "http://127.0.0.1:5555/images/umbrellas.avif",
+    "http://127.0.0.1:5555/images/palms.avif",
+  ];
+
+  // figcaption array
+  const subtitles = [
+    "Chill by the pool with orange cushions",
+    "Home away from home",
+    "Tropical paradise with cloudy skies",
+  ];
+
+  const allImageInfo = [
+    {
+      id: 1,
+      imgLink: "http://127.0.0.1:5555/images/pool.avif",
+      caption: "Chill by the pool with orange cushions",
+    },
+
+    {
+      id: 2,
+      imgLink: "http://127.0.0.1:5555/images/umbrellas.avif",
+      caption: "Home away from home",
+    },
+
+    {
+      id: 3,
+      imgLink: "http://127.0.0.1:5555/images/palms.avif",
+      caption: "Tropical paradise with cloudy skies",
+    },
   ];
 
   const changeLeftImage = () => {
@@ -13,12 +40,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // click function for left arrow
     leftArrow.addEventListener("click", function () {
       // toggles among images
-      if (document.getElementById("imageId").src === allImagesArr[0]) {
-        document.getElementById("imageId").src = allImagesArr[2];
-      } else if (document.getElementById("imageId").src === allImagesArr[2]) {
-        document.getElementById("imageId").src = allImagesArr[1];
-      } else if (document.getElementById("imageId").src === allImagesArr[1]) {
-        document.getElementById("imageId").src = allImagesArr[0];
+      if (document.getElementById("imageId").src === allImageInfo[0].imgLink) {
+        document.getElementById("imageId").src = allImageInfo[2].imgLink;
+        document.getElementById("imgText").innerHTML = allImageInfo[2].caption;
+      } else if (
+        document.getElementById("imageId").src === allImageInfo[2].imgLink
+      ) {
+        document.getElementById("imageId").src = allImageInfo[1].imgLink;
+        document.getElementById("imgText").innerHTML = allImageInfo[1].caption;
+      } else if (
+        document.getElementById("imageId").src === allImageInfo[1].imgLink
+      ) {
+        document.getElementById("imageId").src = allImageInfo[0].imgLink;
+        document.getElementById("imgText").innerHTML = allImageInfo[0].caption;
       }
     });
   };
@@ -31,12 +65,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // click function for right arrow
     rightArrow.addEventListener("click", function () {
       // toggles among images
-      if (document.getElementById("imageId").src === allImagesArr[0]) {
-        document.getElementById("imageId").src = allImagesArr[1];
-      } else if (document.getElementById("imageId").src === allImagesArr[1]) {
-        document.getElementById("imageId").src = allImagesArr[2];
-      } else if (document.getElementById("imageId").src === allImagesArr[2]) {
-        document.getElementById("imageId").src = allImagesArr[0];
+      if (document.getElementById("imageId").src === allImageInfo[0].imgLink) {
+        document.getElementById("imageId").src = allImageInfo[1].imgLink;
+        document.getElementById("imgText").innerHTML = allImageInfo[1].caption;
+      } else if (
+        document.getElementById("imageId").src === allImageInfo[1].imgLink
+      ) {
+        document.getElementById("imageId").src = allImageInfo[2].imgLink;
+        document.getElementById("imgText").innerHTML = allImageInfo[2].caption;
+      } else if (
+        document.getElementById("imageId").src === allImageInfo[2].imgLink
+      ) {
+        document.getElementById("imageId").src = allImageInfo[0].imgLink;
+        document.getElementById("imgText").innerHTML = allImageInfo[0].caption;
       }
     });
   };
