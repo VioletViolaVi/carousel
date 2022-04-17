@@ -1,6 +1,6 @@
 # Carousel
 
-This is a static website which displays a carousel. It uses HTML5 and CSS3 to create the UI of the carousel and JavaScript to make the carousel function when interacted with by the user. It is also responsive and easy to use on different screen sizes.
+This is a static website which displays a carousel. It uses HTML5 and CSS3 to create the UI of the carousel and JavaScript to make the carousel function when interacted with by the user. It is also responsive and easy to use on different screen sizes. The website also used Google Fonts to style the font used. It also used Font Awesome to provide the icons used on this website.
 
 # Technology Used
 
@@ -8,6 +8,7 @@ This is a static website which displays a carousel. It uses HTML5 and CSS3 to cr
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Google Fonts](https://fonts.google.com/)
+- [Font Awesome](https://fontawesome.com/)
 
 # Credits
 
