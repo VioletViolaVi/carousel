@@ -9,6 +9,10 @@ This is a static website which displays a carousel. It uses HTML5 and CSS3 to cr
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Google Fonts](https://fonts.google.com/)
 - [Font Awesome](https://fontawesome.com/)
+- [Chrome Development Tools](https://developer.chrome.com/docs/)
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [VS Code](https://code.visualstudio.com/)
 
 # Credits
 
